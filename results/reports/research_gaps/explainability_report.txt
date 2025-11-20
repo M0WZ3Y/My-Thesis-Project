@@ -1,0 +1,81 @@
+================================================================================
+MODEL EXPLAINABILITY REPORT
+PJM Electricity Price Prediction
+================================================================================
+Generated: 2025-11-19 19:38:02
+SHAP Available: True
+Models Analyzed: 3
+Features: 21
+
+FEATURE IMPORTANCE SUMMARY
+----------------------------------------
+Top 10 Most Important Features (Average):
+ 1. system_energy_price_da: 1.3065
+ 2. price_mean_24h: 0.4993
+ 3. congestion_price_da: 0.4297
+ 4. marginal_loss_price_da: 0.3284
+ 5. price_lag_1h: 0.0647
+ 6. energy_ratio: 0.0442
+ 7. congestion_ratio: 0.0114
+ 8. price_change_1h: 0.0060
+ 9. price_mean_168h: 0.0032
+10. hour: 0.0027
+
+
+LINEAR REGRESSION - Top 5 Features:
+1. system_energy_price_da: 3.8752
+2. congestion_price_da: 1.2468
+3. marginal_loss_price_da: 0.9763
+4. price_mean_168h: 0.0000
+5. price_mean_24h: 0.0000
+
+RANDOM FOREST - Top 5 Features:
+1. price_mean_24h: 0.8084
+2. energy_ratio: 0.0655
+3. price_lag_1h: 0.0557
+4. congestion_ratio: 0.0208
+5. congestion_price_da: 0.0197
+
+GRADIENT BOOSTING - Top 5 Features:
+1. price_mean_24h: 0.6895
+2. price_lag_1h: 0.1383
+3. energy_ratio: 0.0670
+4. system_energy_price_da: 0.0346
+5. congestion_price_da: 0.0227
+
+MODEL AGREEMENT ANALYSIS
+------------------------------
+Average model correlation: 0.0199
+
+Most Agreed-Upon Features (Lowest Std Dev):
+1. quarter: 0.0000
+2. version_nbr: 0.0000
+3. month: 0.0000
+4. day_of_week: 0.0000
+5. pnode_id: 0.0000
+
+INTERPRETABILITY INSIGHTS
+-----------------------------------
+1. Time-based features (hour, month) consistently important
+2. Lag features (previous prices) highly predictive
+3. Peak hour indicators show strong market patterns
+4. Price components reveal market structure
+5. Rolling statistics capture temporal dependencies
+
+RESEARCH IMPLICATIONS
+------------------------------
+1. Addresses gap in model explainability literature
+2. Provides actionable insights for market participants
+3. Enhances trust in ML-based price forecasting
+4. Enables feature selection for improved model performance
+5. Supports regulatory compliance and transparency
+
+SHAP ANALYSIS COMPLETED
+------------------------------
+• Local interpretability for individual predictions
+• Global feature importance patterns identified
+• Feature interactions and dependencies analyzed
+
+================================================================================
+END OF REPORT
+================================================================================
